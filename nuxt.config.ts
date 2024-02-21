@@ -1,11 +1,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   components: true,
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-})
+});

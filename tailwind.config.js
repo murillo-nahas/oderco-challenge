@@ -12,6 +12,7 @@ export default {
     extend: {
       colors: {
         borderYellow: "#DBA90D",
+        borderYellowHover: "#E2C055",
         borderGray: "#434343",
         textGray: "#8D8D8D",
         backgroundGray: "#202020",
