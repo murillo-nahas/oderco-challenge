@@ -15,6 +15,7 @@ export default {
         borderYellowHover: "#E2C055",
         borderGray: "#434343",
         textGray: "#8D8D8D",
+        textGrayLighter: "#A7A7A7",
         backgroundGray: "#202020",
       },
       fontSize: {
