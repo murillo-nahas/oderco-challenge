@@ -1,3 +1,7 @@
+<template>
+  <h1 class="text-white">Dados: {{ responseData }}</h1>
+</template>
+
 <script setup lang="ts">
 const { params }: any = useRoute();
 
@@ -7,8 +11,9 @@ const { data: people }: any = await useFetch(
 
 let responseData = people.value;
 console.log(responseData);
-</script>
 
-<template>
-  <h1 class="text-white">Dados: {{ responseData }}</h1>
-</template>
+useHead({
+  title: `SWAPI - ${responseData.name}`,
+  
+})
+</script>

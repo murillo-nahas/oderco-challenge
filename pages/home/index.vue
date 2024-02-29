@@ -67,6 +67,10 @@
 <script setup lang="ts">
 import { extractIdFromUrl } from "~/utils/ExtractIdFromUrl";
 
+useHead({
+  title: 'SWAPI',
+})
+
 const { data: people }: any = await useFetch("https://swapi.dev/api/people/");
 
 const responseData = people.value;
@@ -86,10 +90,5 @@ function handleSearchInput(event: any) {
 
 function handleClearSearch() {
   searchQuery.value = "";
-}
-
-function handlePagination(filteredData: any) {
-  filteredData.slice(0, 6);
-  return filteredData;
 }
 </script>
