@@ -78,15 +78,11 @@
 </template>
 
 <script setup lang="ts">
-useHead({
-  title: "SWAPI",
-});
-
 import { extractIdFromUrl } from "~/utils/functions/extract-id-from-url";
 
 const config = useRuntimeConfig();
 
-const { data: people }: any = await useFetch("https://swapi.info/api/people");
+const { data: people }: any = await useFetch(config.public.API_PEOPLE_URL);
 
 const responseData = people.value;
 
@@ -106,4 +102,8 @@ function handleSearchInput(event: any) {
 function handleClearSearch() {
   searchQuery.value = "";
 }
+
+useHead({
+  title: "SWAPI",
+});
 </script>
