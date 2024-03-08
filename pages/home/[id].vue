@@ -29,7 +29,6 @@
 import type { RouteLocationNormalizedLoaded } from "vue-router";
 
 const { params }: RouteLocationNormalizedLoaded = useRoute();
-
 const config = useRuntimeConfig();
 
 const { data: people }: any = await useFetch(
@@ -44,10 +43,7 @@ async function getDetailsInformation() {
   );
 
   responseData = detailsData;
-  console.log(responseData);
 }
-
-console.log(responseData);
 
 useHead({
   title: `SWAPI - ${responseData.name}`,
