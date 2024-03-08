@@ -15,6 +15,6 @@ let responseData = people.value;
 console.log(responseData);
 
 useHead({
-  title: `SWAPI`,
+  title: `SWAPI - ${responseData.name}`,
 });
 </script>
