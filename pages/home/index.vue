@@ -86,7 +86,7 @@ import { extractIdFromUrl } from "~/utils/functions/extract-id-from-url";
 
 const config = useRuntimeConfig();
 
-const { data: people }: any = await useFetch(config.public.API_PEOPLE_URL);
+const { data: people }: any = await useFetch("https://swapi.info/api/people");
 
 const responseData = people.value;
 
