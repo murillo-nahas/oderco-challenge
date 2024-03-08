@@ -4,7 +4,7 @@ Este repositório é destinado para o teste técnico da vaga de Front-end Pleno 
 
 ## Objetivo
 
-O projeto consiste em consumir uma API pública [SWAPI](https://swapi.dev/) para recuperar informações relevantes sobre os personagens da franquia Star Wars. <br/>
+O projeto consiste em consumir uma API pública [SWAPI](https://swapi.info/) para recuperar informações relevantes sobre os personagens da franquia Star Wars. <br/>
 A UI do projeto você pode encontrar aqui no [Figma](https://www.figma.com/file/uCdSJkWC28hMwqRI8fwxbm/Frontend-API-Star-Wars?type=design&node-id=0%3A1&mode=design&t=NYi4OylPLpLJEHI6-1).
 
 ## Instalação do projeto
@@ -39,4 +39,4 @@ No projeto, até o momento atual, foram utilizadas as seguintes tecnologias:
 - [ ] Error handling.
 - [ ] Testes unitários.
 - [x] Documentação.
-- [ ] Deploy na vercel.
+- [x] Deploy na vercel.
