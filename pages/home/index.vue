@@ -107,4 +107,3 @@ function handleClearSearch() {
   searchQuery.value = "";
 }
 </script>
-~/utils/extract-id-from-url~/utils/functions/extract-id-from-url
