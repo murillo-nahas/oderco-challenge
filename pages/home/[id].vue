@@ -5,15 +5,16 @@
 <script setup lang="ts">
 const { params }: any = useRoute();
 
+const config = useRuntimeConfig();
+
 const { data: people }: any = await useFetch(
-  `https://swapi.dev/api/people/${params.id}/`
+  `${config.public.API_PEOPLE_URL}/${params.id}`
 );
 
 let responseData = people.value;
 console.log(responseData);
 
 useHead({
-  title: `SWAPI - ${responseData.name}`,
-  
-})
+  title: `SWAPI`,
+});
 </script>
