@@ -4,16 +4,19 @@ export default defineNuxtConfig({
       API_PEOPLE_URL: process.env.API_PEOPLE_URL,
     },
   },
+
   devtools: { enabled: true },
   pages: true,
   components: true,
   css: ["~/assets/css/main.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   app: {
     head: {
       charset: "utf-8",
@@ -27,4 +30,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  modules: ["@nuxt/image"]
 });
